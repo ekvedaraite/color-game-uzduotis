@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     h1.addEventListener('click', function (event) {
-        console.log('h1 clicked')
         event.preventDefault()
     })
 
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             })
         }
-        
+
         {
             // Add a line break after every 3 boxes for hard mode
             const lineBreak = document.createElement('br');
@@ -95,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const newColorsTab = document.getElementById('pirmas')
     newColorsTab.addEventListener('click', function () {
-        console.log('New Colors tab clicked')
         if (!gameInProgress) {
             if (currentDifficulty === 'easy') {
                 startGame()
@@ -108,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const easyTab = document.getElementById('antras')
     easyTab.addEventListener('click', function () {
-        console.log('Easy tab clicked')
         currentDifficulty = 'easy'
         activeTab = 'antras'
         if (!gameInProgress) {
@@ -122,7 +119,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const hardTab = document.getElementById('trecias')
     hardTab.addEventListener('click', function () {
-        console.log('Hard tab clicked')
         currentDifficulty = 'hard'
         activeTab = 'trecias'
         if (!gameInProgress) {
