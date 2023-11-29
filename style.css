@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana;
+    background: #232323;
+}
+
+body:hover{
+    cursor: default;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background: #4682b4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: x-large;
+    padding: 10px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+
+.tabs {
+    line-height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #4682b4;
+}
+
+.tab {
+    text-transform: uppercase;
+    font-size: small;
+}
+
+#pirmas {
+    border: none;
+    background: white;
+    color: #4682b4;
+    margin-right: 50px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#antras {
+    margin-right: 10px;
+    margin-left: 50px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#trecias {
+    margin-left: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main {
+    height: auto;
+    width: 100%;
+}
+
+#pirmas:hover,
+#antras:hover,
+#trecias:hover,
+#antras.active,
+#trecias.active{
+    cursor: pointer;
+    background: #4682b4;
+    color: white;
+}
+
+#boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 8px;
+  }
+
+  .box:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    header {
+        height: auto;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: medium;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .tab {
+        font-size: small;
+    }
+
+    #pirmas {
+        padding: 0;
+        margin: 0;
+        margin-left: 10%;
+    }
+
+    #antras {
+        padding: 0;
+        margin: 0;
+        margin-left: 20%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #trecias {
+        padding: 0;
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 10%;
+        margin-left: 5%;
+    }
+
+    #boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        max-width: 150px;
+        margin: 5px;
+    }
+}
